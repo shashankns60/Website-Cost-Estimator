@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Website Cost Estimator</title>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body style="background-image: url(img/p2.png);">
+	<div class="col-sm-12 quote-calc col-xs-12" id="quote-calc">
+		<h1>Website Cost Estimator</h1><br><br>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<h4>Number Of Pages:</h4>
+				
+				<select class="form-control" id="beds">
+					<option value="f" disabled selected>Number Of Pages </option>
+					<option value="0">No</option>
+					<option value="199.95">1-10</option>
+					<option value="249.95">10-20</option>
+					<option value="279.95">20-50</option>
+					<option value="299.95">50-100</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<h4>File Upload:</h4>
+				<select class="form-control" id="uploads">
+					<option value="f" disabled selected>File Upload </option>
+					<option value="0">No</option>
+					<option value="199.95">CSV File</option>
+					<option value="249.95">Pdf File</option>
+					<option value="279.95">Video File</option>
+					<option value="299.95">All Type</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<h4>Server Setup:</h4>
+				<select class="form-control" id="server">
+					<option value="f" disabled selected>Server Setup </option>
+					<option value="0.00">No</option>
+					<option value="249.95">Yes</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<h4>Database Integration:</h4>
+				<select class="form-control" id="database">
+					<option value="f" disabled selected>Database Integration </option>
+					<option value="0.00">None</option>
+					<option value="249.95">Basic</option>
+					<option value="249.95">Advance</option>
+					<option value="249.95">Full Development</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<h4>Responsive Design:</h4>
+				<select class="form-control" id="design">
+					<option value="f" disabled selected>Responsive Design </option>
+					<option value="0.00">No</option>
+					<option value="249.95">Yes</option>
+					
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<h4>Number Of User's:</h4>
+				<select class="form-control" id="baths">
+					<option value="f" disabled selected>Number Of User's </option>
+					<option value="0">1-10</option>
+					<option value="1">10-20</option>
+					<option value="2">20-50</option>
+					<option value="3">50-100</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="row-extras">
+				<h4>Do you want to add any Extras?</h4>
+				<!-- <h5>(Click a tile to add it to your estimate)</h5> -->
+				<div class="form-group" id="extras">
+					<div class="col-sm-4 col-xs-6">
+						<div class="extra-container" id="Gallery-col">
+						
+							<div class="extra-name" id="Gallery">Image Gallery</div>
+							<div class="extra-price">Rs.99</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6">
+						<div class="extra-container" id="Image-col">
+							
+							<div class="extra-name" id="Image">Image Slider</div>
+							<div class="extra-price">Rs.29</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6">
+						<div class="extra-container" id="Google-col">
+						
+							<div class="extra-name" id="Google">Google Map</div>
+							<div class="extra-price">Rs.39</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-sm-offset-2 col-xs-6">
+						<div class="extra-container" id="Custom-col">
+							
+							<div class="extra-name" id="Custom">Custom Logo</div>
+							<div class="extra-price">Rs.29</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
+						<div class="extra-container" id="Contact-col">
+							<!-- <img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/laundry-off.png"
+								title="laundry"  /> -->
+							<div class="extra-name" id="Contact">Contact Form</div>
+							<div class="extra-price">Rs.29</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<!-- <div class="row-often">
+				<h4>How Often?</h4>
+				<h5>(Click a tile to select your frequency)</h5>
+				<div class="form-group">
+					<div class="col-occur col-sm-6 col-xs-6 on" id="col-once-off">
+						<img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/Onceoff-on.png" title="move"
+							id="once-off" />
+						<div class="disc">No Discount</div>
+					</div>
+					<div class="col-occur col-sm-6 col-xs-6" id="col-weekly">
+						<img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/Weekly-off.png" title="fridge"
+							id="weekly" />
+						<div class="disc">50% Discount</div>
+					</div>
+					<div class="col-occur col-sm-6 col-xs-6" id="col-fortnightly">
+						<img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/Fortnightly-off.png"
+							title="oven" id="fortnightly" />
+						<div class="disc">45% Discount</div>
+					</div>
+					<div class="col-occur col-sm-6 col-xs-6" id="col-monthly">
+						<img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/Monthly-off.png"
+							title="dishes" id="monthly" />
+						<div class="disc"> 40% Discount</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="col-sm-12 col-xs-12 clearfix quote-col ">
+				<div class="quote">
+					<h2>Your Estimate:</h2>
+					<span class="total" id="total">
+						Rs.0.00
+					</span>
+					<a href="" title="Total Development Cost" data-options="thumbnail: ''">Total Development Cost</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- partial -->
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
