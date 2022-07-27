@@ -50,7 +50,8 @@ h4 {
 
 #quote-calc .form-control {
 	margin-top: 20px;
-	padding: 20px;
+	/* padding: 20px; */
+	
 }
 
 /* row often */
@@ -93,9 +94,7 @@ h4 {
 }
 
 /* extras */
-#quote-calc .row-extras {
-	/*margin-top: 50px;*/
-}
+
 
 #quote-calc .row-extras .col-sm-12 {
 	margin-bottom: 30px;
